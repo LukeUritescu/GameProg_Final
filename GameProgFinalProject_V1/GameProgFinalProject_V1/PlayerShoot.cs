@@ -40,6 +40,15 @@ namespace GameProgFinalProject_V1
                 s.Speed = 600;
                 SM.Shoot(s);
             }
+            if(this.controller.input.MouseState.LeftButton == Microsoft.Xna.Framework.Input.ButtonState.Pressed && this.controller.input.PreviousMouseState.LeftButton == Microsoft.Xna.Framework.Input.ButtonState.Released)
+            {
+                Shot s = new Shot(this.Game);
+                s.Location = this.Location;
+                s.Direction = s.Location -this.controller.input.MouseState.Position.ToVector2();
+                s.Direction = s.Direction * -1;
+                s.Speed = 2;
+                SM.Shoot(s);
+            }
 
             base.Update(gameTime);
         }

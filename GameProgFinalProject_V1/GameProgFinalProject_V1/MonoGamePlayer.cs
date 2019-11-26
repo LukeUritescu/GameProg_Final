@@ -15,6 +15,9 @@ namespace GameProgFinalProject_V1
     {
         protected Vector2 lastDirection;
 
+        public Vector2 mouseLocation;
+        public Vector2 vector2Angle;
+
         internal PlayerController controller { get; private set; }
         internal GameConsolePlayer Player
         {
@@ -78,6 +81,7 @@ namespace GameProgFinalProject_V1
             this.MoveState = PlayerMovingState.Still;
             this.DashState = PlayerDashState.NotUsed;
             this.DMGState = PlayerDMGState.Vulnerable;
+
         }
 
         public override void Update(GameTime gameTime)
@@ -110,7 +114,9 @@ namespace GameProgFinalProject_V1
         private void UpdateMovement(float lastUpdateTimed)
         {
             this.Location += ((this.controller.Direction * (lastUpdateTimed / 1000)) * Speed);
-            this.Rotate = this.controller.Rotate;
+            this.mouseLocation = new Vector2(Mouse.GetState().X, Mouse.GetState().Y);
+            this.vector2Angle = this.mouseLocation - this.Location;
+            this.Rotate =  this.controller.RotateFunction(this.vector2Angle);
             if (this.controller.hasInputForMoverment)
             {
             this.lastDirection = this.controller.Direction;

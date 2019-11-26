@@ -36,6 +36,17 @@ namespace GameProgFinalProject_V1
             }
         }
 
+        public float RotateFunction(Vector2 vector2Angle)
+        {
+            float RotationalAngle = (float)Math.Atan2(
+                vector2Angle.X,
+                vector2Angle.Y * -1);
+
+            Rotate = (float)MathHelper.ToDegrees(RotationalAngle - (float)(Math.PI/2 ));
+            return Rotate;
+                
+        }
+
         public void Update()
         {
             //Input for update from analog stick
@@ -118,12 +129,6 @@ namespace GameProgFinalProject_V1
                 PacManKeyDir += new Vector2(0, 1);
             }
 
-            float RotationAngleKey = (float)Math.Atan2(
-                        input.MouseDelta.X,
-                        input.MouseDelta.Y * -1);
-
-            Rotate = (float)MathHelper.ToDegrees(
-                RotationAngleKey - (float)(Math.PI / 2));
             //float RotationAngleKey = (float)Math.Atan2(
             //        input.MouseDelta.X,
             //        input.MouseDelta.Y * -1);

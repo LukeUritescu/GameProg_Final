@@ -27,11 +27,12 @@ namespace GameProgFinalProject_V1
             input = new InputHandler(this);
             console = new GameConsole(this);
 
+            //mouseShot = new MouseShot(this);
+            //this.Components.Add(mouseShot);
+
             this.Components.Add(input);
             this.Components.Add(console);
 
-            mouseShot = new MouseShot(this);
-            this.Components.Add(mouseShot);
 
             playerShoot = new PlayerShoot(this);
             this.Components.Add(playerShoot);

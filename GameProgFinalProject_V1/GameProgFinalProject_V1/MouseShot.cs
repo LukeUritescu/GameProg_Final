@@ -37,11 +37,12 @@ namespace GameProgFinalProject_V1
 
         public override Shot Shoot()
         {
-            s = base.Shoot();
+            Shot s = new Shot(this.Game);
             s.Direction = s.Location - this.input.MouseState.Position.ToVector2();
             s.Direction = s.Direction * -1;
             s.Direction.Normalize();
             s.Speed = 300;
+            Shoot(s);
             return s;
         }
     }
