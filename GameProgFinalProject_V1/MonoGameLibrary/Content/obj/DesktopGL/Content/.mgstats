@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Workspace/GameProg1/GameProgFinalProject_V1/MonoGameLibrary/Content/Arial.spritefont","C:/Workspace/GameProg1/GameProgFinalProject_V1/MonoGameLibrary/Content/bin/DesktopGL/Content/Arial.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21521,0.4880684
+"C:/Workspace/GameProg1/GameProgFinalProject_V1/MonoGameLibrary/Content/SpriteMarker.png","C:/Workspace/GameProg1/GameProgFinalProject_V1/MonoGameLibrary/Content/bin/DesktopGL/Content/SpriteMarker.xnb","TextureProcessor","Texture2DContent",232,185,0.0518357

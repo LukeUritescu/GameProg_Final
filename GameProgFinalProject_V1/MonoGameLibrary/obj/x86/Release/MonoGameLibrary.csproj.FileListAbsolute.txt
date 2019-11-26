@@ -1,0 +1,12 @@
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\bin\DesktopGL\x86\Release\Content\Arial.xnb
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\bin\DesktopGL\x86\Release\Content\SpriteMarker.xnb
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\bin\DesktopGL\x86\Release\OpenTK.dll.config
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\bin\DesktopGL\x86\Release\MonoGameLibrary.dll
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\bin\DesktopGL\x86\Release\MonoGameLibrary.pdb
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\bin\DesktopGL\x86\Release\MonoGame.Framework.dll
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\bin\DesktopGL\x86\Release\MonoGame.Framework.dll.config
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\obj\x86\Release\MonoGameLibrary.csprojAssemblyReference.cache
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\obj\x86\Release\MonoGameLibrary.csproj.CoreCompileInputs.cache
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\obj\x86\Release\MonoGameLibrary.csproj.CopyComplete
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\obj\x86\Release\MonoGameLibrary.dll
+C:\Workspace\GameProg1\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\obj\x86\Release\MonoGameLibrary.pdb
