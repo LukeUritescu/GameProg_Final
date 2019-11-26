@@ -44,9 +44,10 @@ namespace GameProgFinalProject_V1
             {
                 Shot s = new Shot(this.Game);
                 s.Location = this.Location;
-                s.Direction = s.Location -this.controller.input.MouseState.Position.ToVector2();
+                s.Direction = s.Location - this.controller.input.MouseState.Position.ToVector2();
                 s.Direction = s.Direction * -1;
-                s.Speed = 2;
+                s.Direction.Normalize();
+                s.Speed = 600;
                 SM.Shoot(s);
             }
 
