@@ -6,12 +6,27 @@ using System.Threading.Tasks;
 
 namespace GameProgFinalProject_V1
 {
+    public enum PlayerState { Alive, Dead}
     public enum PlayerMovingState { Moving, Still, Dashing }
     public enum PlayerDashState { Startup, Active, Recovery, NotUsed }
     public enum PlayerDMGState { Invulnerable, Vulnerable }
     
     class Player
     {
+        protected PlayerState _state;
+        public PlayerState State
+        {
+            get { return this._state; }
+            set
+            {
+                if(this._state != value)
+                {
+                    this.Log(string.Format("{0} was: {1} now {2}", this.ToString(), _state, value));
+
+                }
+            }
+        }
+
         protected PlayerMovingState _moveState;
         public PlayerMovingState MoveState
         {
@@ -58,7 +73,7 @@ namespace GameProgFinalProject_V1
             this.DMGState = PlayerDMGState.Vulnerable;
         }
 
-        public virtual void Log(string s)
+       public virtual void Log(string s)
         {
             Console.WriteLine(s);
         }

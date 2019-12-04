@@ -1,5 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using MonoGameLibrary.Sprite;
+using MonoGameLibrary.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +22,9 @@ namespace GameProgFinalProject_V1
 
     public class ShotManager : GameComponent, IShotManager
     {
-        List<Shot> shots; //private instance Data Member
+        MonoGamePlayer player;
+        MonogameEnemy enemy;
+        protected List<Shot> shots; //private instance Data Member
         public List<Shot> Shots
         {
             get
@@ -40,9 +44,11 @@ namespace GameProgFinalProject_V1
         public ShotManager(Game game) : base(game)
         {
             this.shots = new List<Shot>();
+            player = new MonoGamePlayer(game);
             this.shotsToRemove = new List<Shot>();
         }
 
+        
         #region Shoot
         public virtual Shot Shoot()
         {
@@ -78,6 +84,19 @@ namespace GameProgFinalProject_V1
         protected virtual void removeShot(Shot s)
         {
             this.shots.Remove(s);
+        }
+
+        public void HitTarget(DrawableSprite target)
+        {
+           
+        }
+
+        //Makes sure if the shot goes off the screen it gets removed
+        public void CheckIfOffScreen()
+        {
+            foreach(Shot s in Shots)
+            {
+            }
         }
 
         public override void Update(GameTime gameTime)

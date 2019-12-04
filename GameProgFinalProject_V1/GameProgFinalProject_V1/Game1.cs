@@ -13,11 +13,10 @@ namespace GameProgFinalProject_V1
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        MonoGamePlayer player;
+        EnemyShoot enemyShoot;
         InputHandler input;
         GameConsole console;
 
-        MouseShot mouseShot;
         PlayerShoot playerShoot;
         public Game1()
         {
@@ -27,19 +26,22 @@ namespace GameProgFinalProject_V1
             input = new InputHandler(this);
             console = new GameConsole(this);
 
-            //mouseShot = new MouseShot(this);
-            //this.Components.Add(mouseShot);
-
             this.Components.Add(input);
             this.Components.Add(console);
 
+            enemyShoot = new EnemyShoot(this);
+            this.Components.Add(enemyShoot);
 
             playerShoot = new PlayerShoot(this);
             this.Components.Add(playerShoot);
 
-            //player = new MonoGamePlayer(this);
-            //this.Components.Add(player);
-
+            //TOTAL HACK! 
+            //Could only figure out how to have my collision work for either enemy shot, or player shot but not both. More info is in the DOC.txt
+            //Couldn't figure out how to work the collision for both Enemy shot colliding with Player object
+            //and also have The player shot collide with the Enemy Object. 
+              
+            playerShoot.MonoEnemy = enemyShoot;
+            enemyShoot.MonoPlayer = playerShoot;
         }
 
         /// <summary>

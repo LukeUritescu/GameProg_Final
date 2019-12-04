@@ -58,3 +58,4 @@ C:\Workspace\GameProg1\GameProg_Final\GameProgFinalProject_V1\GameProgFinalProje
 C:\Workspace\GameProg1\GameProg_Final\GameProgFinalProject_V1\GameProgFinalProject_V1\obj\x86\Debug\GameProgFinalProject_V1.csproj.CopyComplete
 C:\Workspace\GameProg1\GameProg_Final\GameProgFinalProject_V1\GameProgFinalProject_V1\obj\x86\Debug\GameProgFinalProject_V1.exe
 C:\Workspace\GameProg1\GameProg_Final\GameProgFinalProject_V1\GameProgFinalProject_V1\obj\x86\Debug\GameProgFinalProject_V1.pdb
+C:\Workspace\GameProg1\GameProg_Final\GameProgFinalProject_V1\GameProgFinalProject_V1\bin\Windows\x86\Debug\Content\TealGhost.xnb

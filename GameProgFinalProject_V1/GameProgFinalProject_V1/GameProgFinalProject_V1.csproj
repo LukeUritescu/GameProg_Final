@@ -41,13 +41,18 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DashManager.cs" />
+    <Compile Include="Enemy\Enemy.cs" />
+    <Compile Include="Enemy\EnemyShoot.cs" />
     <Compile Include="Game1.cs" />
-    <Compile Include="GameConsolePlayer.cs" />
-    <Compile Include="MonoGamePlayer.cs" />
+    <Compile Include="GameConsoleEnemy.cs" />
+    <Compile Include="Player\GameConsolePlayer.cs" />
+    <Compile Include="Enemy\MonogameEnemy.cs" />
+    <Compile Include="Player\MonoGamePlayer.cs" />
     <Compile Include="MouseShot.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="PlayerController.cs" />
-    <Compile Include="PlayerShoot.cs" />
+    <Compile Include="Player\Player.cs" />
+    <Compile Include="Player\PlayerController.cs" />
+    <Compile Include="Player\PlayerShoot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RateLimitedShotManager.cs" />

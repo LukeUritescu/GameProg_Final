@@ -6,8 +6,10 @@
   <SourceFiles>
     <File>C:/Workspace/GameProg1/GameProg_Final/GameProgFinalProject_V1/GameProgFinalProject_V1/Content/pacmanSingle.png</File>
     <File>C:/Workspace/GameProg1/GameProg_Final/GameProgFinalProject_V1/GameProgFinalProject_V1/Content/shot.png</File>
+    <File>C:/Workspace/GameProg1/GameProg_Final/GameProgFinalProject_V1/GameProgFinalProject_V1/Content/TealGhost.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
